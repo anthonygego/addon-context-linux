@@ -8,7 +8,7 @@
 # if it's enabled in interface configuration. This script needs to
 # 1. have dhclient from package net/isc-dhcp44-client installed
 # 2. be explicitly configured in /etc/rc.conf via
-#    dhclient_program="/usr/sbin/one-dual-dhclient"
+#    dhclient_program="/usr/local/sbin/one-dual-dhclient"
 
 # trigger DHCPv4 client only if DHCP tag is in interface configuration
 if sysrc -f /etc/rc.conf.d/network -f /etc/rc.conf -n "ifconfig_$@" | grep -q -i DHCP; then

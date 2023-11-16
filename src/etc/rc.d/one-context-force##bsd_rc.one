@@ -31,7 +31,7 @@ rcvar="${name}_enable"
 start_precmd="${name}_prestart"
 stop_cmd="${name}_stop"
 status_cmd="${name}_status"
-command="/usr/sbin/one-context-run"
+command="/usr/local/sbin/one-context-run"
 command_args="force"
 
 one_context_get_pids()

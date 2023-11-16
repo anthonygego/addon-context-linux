@@ -21,4 +21,4 @@ start on mounted MOUNTPOINT=/ and mounted MOUNTPOINT=/run
 
 task
 
-exec /usr/sbin/one-contextd local
+exec /usr/local/sbin/one-contextd local

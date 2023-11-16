@@ -28,11 +28,11 @@ if [ -f ${CONTEXT_BASE}.local ] && [ -f ${CONTEXT_BASE}.network ]; then
         (
             set -e
             sleep "${TIMEOUT}"
-            /usr/sbin/one-contextd all ${COMMAND}
+            /usr/local/sbin/one-contextd all ${COMMAND}
         ) &>/dev/null &
         disown
     else
-        /usr/sbin/one-contextd all ${COMMAND}
+        /usr/local/sbin/one-contextd all ${COMMAND}
     fi
 else
     echo 'Contextualization must start first as a boot service' >&2

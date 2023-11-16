@@ -27,6 +27,6 @@ depend() {
 
 start() {
 	ebegin "Starting one-context"
-	/usr/sbin/one-contextd network
+	/usr/local/sbin/one-contextd network
 	eend $?
 }

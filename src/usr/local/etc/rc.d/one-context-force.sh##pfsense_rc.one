@@ -29,7 +29,7 @@ name="one_context_force"
 desc="OpenNebula forced reconfiguration"
 rcvar="${name}_enable"
 
-command="/usr/sbin/one-context-run"
+command="/usr/local/sbin/one-context-run"
 command_args="force"
 
 load_rc_config $name

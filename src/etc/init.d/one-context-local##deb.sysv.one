@@ -34,7 +34,7 @@
 case "$1" in
     start)
         log_daemon_msg $"Starting OpenNebula pre-networking contextualization"
-        /usr/sbin/one-contextd local
+        /usr/local/sbin/one-contextd local
         log_end_msg $?
         ;;
     *)

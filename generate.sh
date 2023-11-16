@@ -182,7 +182,7 @@ else
 
     # set the package version of onesysprep
     sed -i "s/\<_PACKAGE_VERSION_\>/${VERSION}/" \
-        "${BUILD_DIR}/usr/sbin/onesysprep"
+        "${BUILD_DIR}/usr/local/sbin/onesysprep"
 
     # shellcheck disable=SC2086
     fpm --name "${NAME}" --version "${VERSION}" --iteration "${RELEASE_FULL}" \
@@ -207,7 +207,9 @@ else
         --pacman-user 0 \
         --pacman-group 0 \
         ${CONFIG_FILES} \
-        --package "${OUT}"
+        --package "${OUT}" \
+        --verbose \
+	--debug
 fi
 
 basename "${OUT}"

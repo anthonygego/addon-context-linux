@@ -177,8 +177,6 @@ case "${TARGET}" in
         PREUN=${PREUN:-pkg/preuninstall}
         POSTUN=${POSTUN:-pkg/postuninstall}
         POSTUP=${POSTUP:-pkg/postupgrade}
-        echo 'ArchLinux target is currently not maintained'
-        exit 1
         ;;
 
     *)

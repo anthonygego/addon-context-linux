@@ -21,4 +21,4 @@ start on (runlevel [2345] and stopped one-context-local)
 
 task
 
-exec /usr/sbin/one-contextd network
+exec /usr/local/sbin/one-contextd network

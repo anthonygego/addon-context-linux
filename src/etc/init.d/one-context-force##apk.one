@@ -26,6 +26,6 @@ depend() {
 start() {
 	ebegin "Starting one-context-force"
 	export TIMEOUT=0
-	/usr/sbin/one-context-run force
+	/usr/local/sbin/one-context-run force
 	eend $?
 }

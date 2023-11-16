@@ -37,6 +37,9 @@ if [ -z "${NETCFG_TYPE}" ] ; then
         altlinux)
             NETCFG_TYPE='networkd nm'
             ;;
+        arch)
+	    NETCFG_TYPE='networkd'
+	    ;;
         debian|devuan|ubuntu)
             NETCFG_TYPE='interfaces netplan nm networkd'
             ;;

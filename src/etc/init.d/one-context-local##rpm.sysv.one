@@ -38,7 +38,7 @@
 case "$1" in
     start)
         action $"Starting OpenNebula pre-networking contextualization: " \
-            /usr/sbin/one-contextd local
+            /usr/local/sbin/one-contextd local
         ;;
     *)
         echo $"Usage: $0 {start}"

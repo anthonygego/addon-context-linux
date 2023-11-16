@@ -21,4 +21,4 @@ manual
 task
 expect fork
 
-exec /usr/sbin/one-context-run
+exec /usr/local/sbin/one-context-run

@@ -28,7 +28,7 @@ name="one_context"
 desc="OpenNebula's context scripts"
 rcvar="${name}_enable"
 
-command="/usr/sbin/one-contextd"
+command="/usr/local/sbin/one-contextd"
 command_args="network"
 
 load_rc_config $name

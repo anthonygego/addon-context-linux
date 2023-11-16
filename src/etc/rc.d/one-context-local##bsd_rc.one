@@ -31,7 +31,7 @@ desc="OpenNebula pre-networking contextualization"
 rcvar="${name}_enable"
 start_precmd="${name}_prestart"
 stop_cmd="${name}_stop"
-command="/usr/sbin/one-contextd"
+command="/usr/local/sbin/one-contextd"
 command_args="local"
 
 one_context_get_pids()

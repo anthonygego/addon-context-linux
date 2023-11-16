@@ -233,7 +233,7 @@ gen_dhcp6_conf()
         # https://subatomicsolutions.org/8-freebsd/13-ipv4-ipv6-client-addresses-via-dhcp
         _dhclient_program=$(sysrc -n dhclient_program 2>/dev/null)
         if [ -z "${_dhclient_program}" ] || [ "${_dhclient_program}" = '/sbin/dhclient' ]; then
-            echo "WARNING [!]: DHCPv6 on '${os_id}' is poorly supported, you need a different DHCP client! You can install net/isc-dhcp44-client and put into /etc/rc.conf: dhclient_program=\"/usr/sbin/one-dual-dhclient\"" >&2
+            echo "WARNING [!]: DHCPv6 on '${os_id}' is poorly supported, you need a different DHCP client! You can install net/isc-dhcp44-client and put into /etc/rc.conf: dhclient_program=\"/usr/local/sbin/one-dual-dhclient\"" >&2
         fi
     fi
 

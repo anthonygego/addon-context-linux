@@ -7,7 +7,7 @@ StartLimitInterval=0
 
 [Service]
 Type=forking
-ExecStart=/usr/sbin/one-context-run
+ExecStart=/usr/local/sbin/one-context-run
 
 [Install]
 WantedBy=multi-user.target

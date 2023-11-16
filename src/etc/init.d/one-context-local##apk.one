@@ -27,6 +27,6 @@ depend() {
 
 start() {
 	ebegin "Starting one-context-local"
-	/usr/sbin/one-contextd local
+	/usr/local/sbin/one-contextd local
 	eend $?
 }

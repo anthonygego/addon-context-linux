@@ -28,7 +28,7 @@ name="one_context_reconfigure_delayed"
 desc="OpenNebula delayed reconfiguration"
 rcvar="${name}_enable"
 
-command="/usr/sbin/one-context-run"
+command="/usr/local/sbin/one-context-run"
 
 load_rc_config $name
 : ${one_context_reconfigure_delayed_enable:="yes"}

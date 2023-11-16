@@ -22,4 +22,4 @@ task
 
 env TIMEOUT=0
 
-exec /usr/sbin/one-context-run force
+exec /usr/local/sbin/one-context-run force

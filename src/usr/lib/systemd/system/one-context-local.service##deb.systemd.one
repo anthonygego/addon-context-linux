@@ -9,7 +9,7 @@ ConditionPathExists=!/var/run/one-context/context.sh.local
 [Service]
 Type=oneshot
 RemainAfterExit=yes
-ExecStart=/usr/sbin/one-contextd local
+ExecStart=/usr/local/sbin/one-contextd local
 
 [Install]
 WantedBy=multi-user.target

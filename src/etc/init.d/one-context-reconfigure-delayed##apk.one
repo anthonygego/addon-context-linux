@@ -25,6 +25,6 @@ depend() {
 
 start() {
 	ebegin "Starting one-context-reconfigure-delayed"
-	/usr/sbin/one-context-run
+	/usr/local/sbin/one-context-run
 	eend $?
 }
